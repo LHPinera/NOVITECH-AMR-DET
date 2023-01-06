@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="IntelligentTraffic.ArbolP"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MinHeight="320"
+             MinWidth="155">
+    <Grid>
+        <TreeView x:Name="listIp" x:FieldModifier="public" Background="White" BorderBrush="Black" Foreground="#FF700000" MouseDoubleClick="treeIps_MouseDoubleClick"></TreeView>
+    </Grid>
+</UserControl>
