@@ -5,8 +5,8 @@
 
 ### Este programa recibe los eventos de cámaras LPR.
 
-### La solucion consta de 4 modulos.
-#### 1.- App.Data
+#### La solucion consta de 4 modulos.
+##### 1.- App.Data
 Aqui se definen los parámetros de conexion al servidor SQL y el proceso de inserción de los hits en la base de datos 
 - Programas:
   -  cdAlerta.cs - Define el proceso de la insercion de datos, sus funciones son:
@@ -25,8 +25,17 @@ Aqui se definen los parámetros de conexion al servidor SQL y el proceso de inse
       
 #### 2.- App.Deal
 Define el procesamiento de los hits recibidos de las cámaras
+
+| Función | Descripción |
+| --- | --- |
+| Actualizar | Ejecuta el proceso de insercion en la base de datos |
+| Insertar | Proceso de insercion del hit de la placa, previa validacion del texto obtenido |
+
 - Programas:
     - cdAlertas.cs - Realiza la validacion de los datos obtenidos del evento de lectura de las camaras y hace la insercion en la base de datos sus funciones son:
+  
+  
+                                              
        - Actualizar - Ejecuta el proceso de insercion en la base de datos
        - Insertar - Proceso de insercion del hit de la placa, previa validacion del texto obtenido
        - ValidarPlaca - Valida la longitud del texto y verifica los número y letras
@@ -50,3 +59,7 @@ Clases de los datos utilizados por el programa
    - Lista - Lista de camaras
  
 #### 4.- ANPR Detector
+Es la rutina principal de la solucion
+- Programas:
+   - MainWindow.xml - Es un formulario xml para el despliegue de los datos obtenidos de cada evento
+
