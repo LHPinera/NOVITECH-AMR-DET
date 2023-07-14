@@ -10,18 +10,23 @@
 Aqui se definen los parámetros de conexion al servidor SQL y el proceso de inserción de los hits en la base de datos 
 - Programas:
   -  cdAlerta.cs - Define el proceso de la insercion de datos, sus funciones son:
-     - Insertar - Funcion general de insercion de hit de placa, el programa puede hacer la insercion de manera local o en la nube o en ambas
-     - InsertarNube - Hace la inserción del registro en el servidor remoto
-     - InsertarLocal - Hace ña inserción del registro en el servidor local
-     - InsertDb - Valida los registro locales y los envia a la nube
-     - UpdateLocal - Aactualiza el estatus del registro local que fue enviado a la nube
-     - GetCamNube - Crea una lista de cámaras desde el servidor remoto
-     - GetCamLocal - Crea una lista de cámaras desde el servidor local
-     - InsertarConfiguracion - Agrega una cámara a la base de datos local
-     - GetConfig - Obtiene los parametros de conexion y tipo de camara desde el servidor local
+ 
+| Función ! Descripción |
+| --- | --- |
+| Insertar | Funcion general de insercion de hit de placa, el programa puede hacer la insercion de manera local o en la nube o en ambas |
+| InsertarNube | Hace la inserción del registro en el servidor remoto |
+| InsertarLocal | Hace ña inserción del registro en el servidor local |
+| InsertDb | Valida los registro locales y los envia a la nube |
+| UpdateLocal | Aactualiza el estatus del registro local que fue enviado a la nube |
+| GetCamNube | Crea una lista de cámaras desde el servidor remoto |
+| GetCamLocal | Crea una lista de cámaras desde el servidor local |
+| InsertarConfiguracion | Agrega una cámara a la base de datos local |
+| GetConfig | Obtiene los parametros de conexion y tipo de camara desde el servidor local |
     - Conection.cs - Define la cadena de conexion para los servicios locales y remotos, sus funciones son:
-      - GetConLocal - Define la cadena de conexion local
-      - GetConNube - Define la cadena de conexion remota
+| Función ! Descripción |
+| --- | --- |
+| GetConLocal | Define la cadena de conexion local |
+| GetConNube | Define la cadena de conexion remota |
       
 #### 2.- App.Deal
 Define el procesamiento de los hits recibidos de las cámaras
