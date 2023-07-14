@@ -35,7 +35,7 @@
 | GetConNube | Define la cadena de conexion remota |
       
 #### 2.- App.Deal
-Define el procesamiento de los hits recibidos de las cámaras
+<p>Define el procesamiento de los hits recibidos de las cámaras
 
 | Programa | Descripción |
 | --- | --- |
@@ -54,16 +54,18 @@ Define el procesamiento de los hits recibidos de las cámaras
 | GetConfig | Obtiene la lista de cámaras |
       
 #### 3.- App.Entity
-Clases de los datos utilizados por el programa
-- Clases
-   - CeAlerta - Datos del evento de lectura (hit)
-   - CeAlertaL - Evento de lectura local
-   - CeAlertaN - Evento de lectura remoto
-   - CeAntena - Datos de lectura de antena - no se utiliza
-   - CeCamara - Datos de configuracion de las camaras
-   - CeConfig - Datos de las cámaras
-   - CeInfoCamara - Datos de conexion de las camaras
-   - Lista - Lista de camaras
+<p>Clases de los datos utilizados por el programa
+
+| Clase | Descripción |
+| --- | --- |
+| CeAlerta | Datos del evento de lectura (hit) |
+| CeAlertaL | Evento de lectura local |
+| CeAlertaN | Evento de lectura remoto |
+| CeAntena | Datos de lectura de antena - no se utiliza |
+| CeCamara | Datos de configuracion de las camaras |
+| CeConfig | Datos de las cámaras |
+| CeInfoCamara | Datos de conexion de las camaras |
+| Lista | Lista de camaras |
  
 #### 4.- ANPR Detector
 Es la rutina principal de la solucion
