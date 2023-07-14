@@ -5,7 +5,31 @@
 
 ### Este programa recibe los eventos de cámaras LPR.
 
+### Flujo de la solución
+
+<p>Se crea una lista de cámaras definidas en la tabla Config_CAM de la base de datos, esta incluye: </p>
+      
+- Marca
+- Dirección IP
+- Puerto
+- Nombre de usuario
+- Contraseña
+<p>Ya creada la lista se abre un hilo por cada camara que responda a la solicitud de conexion y se activa un evento de respuesta</p>
+<p>Cuando se recibe el evento de respuesta se valida la marca de la cámara y se envia la respuesta al sdk correspondiente </p>
+<p>El sdk analiza el evento y crea una estructura de datos que contiene: </p>
+
+- Placa
+- Imágen de la placa
+- Imágen del vehiculo
+- Fecha y hora del evento
+- Id de la cámara
+- Velocidad (cuando la cámara tenga la funcionalidad)
+
+<p>Se valida el numero de placa para que al menos contenga una letra y un numero</p>
+<p>Se hace la insercion en la tabla Hits de la base de datos</p>
+
 #### La solucion consta de 4 modulos.
+
 ##### 1.- App.Data
 <p>Aqui se definen los parámetros de conexion al servidor SQL y el proceso de inserción de los hits en la base de datos 
 
